@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+.detalle-eventos {
+    padding: 20px;
+    margin-bottom: 80px; /* Añadimos margen para que haya espacio en la parte inferior */
+}
+
 #calendario {
     max-width: 900px;
     margin: 0 auto;
@@ -41,6 +46,13 @@
     background-color: #9a0063; /* Color principal */
     color: white; /* Texto en blanco */
     border: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+.fc-event:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
 }
 
 /* Cambia el color de fondo del día seleccionado */

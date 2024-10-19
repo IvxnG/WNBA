@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos - Fiestas de la Peña NBA</title>
+    <link rel="icon" href="../path/to/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/events.css">
 </head>
 <body>
+    <!-- Loader -->
+    <div id="loader" class="loader">Cargando...</div>
+
     <!-- Header de la sección de eventos -->
-    <header id="main-header">
+    <header id="main-header" role="banner" aria-label="Menú de navegación">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <div class="logo">NBA</div>
         <ul id="menu" class="menu">
             <li><a href="../index.html">Inicio</a></li>
@@ -37,7 +42,7 @@
         <p>&copy; 2024 Peña NBA. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- FullCalendar JS desde node_modules -->
+    <!-- FullCalendar JS -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
     <script src="../js/events.js"></script>
 </body>

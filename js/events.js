@@ -30,4 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendar.render();
+    document.getElementById('loader').style.display = 'none'; // Ocultar el loader al cargar el calendario
 });
+
+// Función para mostrar/ocultar el menú en móviles
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+
+    const menuIcon = document.querySelector('.menu-icon');
+    if (menu.classList.contains('show')) {
+        menuIcon.textContent = '✖';  // Icono de cerrar
+    } else {
+        menuIcon.textContent = '☰';  // Icono de abrir
+    }
+}
