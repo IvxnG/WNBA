@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Fiestas de la Peña NBA</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/events.css">
+</head>
+<body>
+    <!-- Header de la sección de eventos -->
+    <header id="main-header">
+        <div class="logo">NBA</div>
+        <ul id="menu" class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#calendario">Calendario</a></li>
+            <li><a href="#detalle-eventos">Detalles</a></li>
+        </ul>
+    </header>
+
+    <!-- Sección de calendario -->
+    <section class="eventos">
+        <h1>Eventos de la Peña NBA - Septiembre 2025</h1>
+        <div id="calendario"></div>
+    </section>
+
+    <!-- Sección de detalles de eventos -->
+    <section class="detalle-eventos">
+        <h2>Detalles del Evento</h2>
+        <div id="event-details" class="event-list">
+            <p>Selecciona un día del calendario para ver los eventos programados.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Peña NBA. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- FullCalendar JS desde node_modules -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="../js/events.js"></script>
+</body>
+</html>

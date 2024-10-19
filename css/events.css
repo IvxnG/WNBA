@@ -1,0 +1,61 @@
+/* Sección de eventos */
+.eventos {
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+}
+
+#calendario {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalles de los eventos */
+.detalle-eventos {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #eee;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.event-list p {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Personaliza el fondo de los eventos */
+.fc-event {
+    background-color: #9a0063; /* Color principal */
+    color: white; /* Texto en blanco */
+    border: none;
+}
+
+/* Cambia el color de fondo del día seleccionado */
+.fc-daygrid-day.fc-day-today {
+    background-color: #ececec; /* Gris claro */
+}
+
+/* Personaliza la apariencia de los títulos de eventos */
+.fc-toolbar-title {
+    color: #9a0063; /* Color principal */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Ajustes adicionales para el calendario */
+.fc {
+    font-family: 'Montserrat', sans-serif;
+}
